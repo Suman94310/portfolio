@@ -7,7 +7,7 @@ html,body{
     flex-direction: column;
     background: #f4f4f4;
     font-family: Montserrat;
-
+    scroll-behavior: smooth;
 }
 
 .container{
