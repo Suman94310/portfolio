@@ -230,12 +230,14 @@ ul{
 .contact-form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
 
 .contact-form>input{
     border: none;
     height: 40px;
-    width: 500px;
+    width: 100%;
     margin-bottom: 3px;
     padding-left: 20px;
     background: #1E242C;
@@ -245,7 +247,7 @@ ul{
 
 .contact-form>textarea{
     border: none;
-    width: 500px;
+    width: 100%;
     background: #1E242C;
     color: #f4f4f4;
     font-size: 15px;
