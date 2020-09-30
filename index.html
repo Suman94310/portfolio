@@ -12,6 +12,13 @@
     <script src="./scripts/index.js"></script>
     <!-- end importing index js -->
 
+    <!-- importing smtp js start -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <!-- end importing smtp js -->
+    <script src="./scripts/smtp.js"></script>
+
+
     <!-- start importing fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -110,10 +117,11 @@
     <div class="contact" id="contact">
         <div class="container">
             <div class="title">CONTACT ME</div>
-            <form action="post" class="contact-form">
-                <input type="text" name="" id="" placeholder="Name">
-                <input type="text" name="" id="" placeholder="E-mail">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <form class="contact-form" id="form">
+                <input type="text" name="" id="name" placeholder="Name">
+                <input type="text" name="" id="email" placeholder="E-mail">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="">
             </form>
         </div>
     </div>
