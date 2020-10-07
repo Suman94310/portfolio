@@ -18,6 +18,10 @@
     <!-- end importing smtp js -->
     <script src="./scripts/smtp.js"></script>
 
+    <!-- importing lottie start -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- end importing lottie -->
+
 
     <!-- start importing fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -56,7 +60,12 @@
         <div class="container">
             <div class="title">ABOUT ME</div>
             <div class="about-content">
-                Hello, I am Suman Saurav. I am an ECE undergrad currently studying at Thapar Institute of Technology. I have holastic knowledge of Web Technology and I have a serious passion for creating intuitive and dynamic user experiences. 
+                <div class="about-illustration">
+                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay ></lottie-player>
+                </div>
+                <div class="about-text">
+                    Hello, I am Suman Saurav. I am an ECE undergrad currently studying at Thapar Institute of Technology. I have holastic knowledge of Web Technology and I have a serious passion for creating intuitive and dynamic user experiences. 
+                </div>
             </div>
         </div>
     </div>
@@ -103,9 +112,18 @@
         <div class="container">
             <div class="title">PROJECTS</div>
             <div class="projects-list">
-                <div class="projects-project"></div>
-                <div class="projects-project"></div>
-                <div class="projects-project"></div>
+                <div class="projects-project">
+                    <div class="projects-gif"></div>
+                    <img src="./imges/github.svg" class="projects-github" alt="">
+                </div>
+                <div class="projects-project">
+                    <div class="projects-gif"></div>
+                    <img src="./imges/github.svg" class="projects-github" alt="">
+                </div>
+                <div class="projects-project">
+                    <div class="projects-gif"></div>
+                    <img src="./imges/github.svg" class="projects-github" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -121,7 +139,7 @@
                 <input type="text" name="" id="name" placeholder="Name">
                 <input type="text" name="" id="email" placeholder="E-mail">
                 <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <input type="submit" value="">
+                <button class="contact-button">SEND</button>
             </form>
         </div>
     </div>
