@@ -18,6 +18,10 @@
     <!-- end importing smtp js -->
     <script src="./scripts/smtp.js"></script>
 
+    <!-- importing font-awesome start-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end importing font-awesome -->
+
     <!-- importing lottie start -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- end importing lottie -->
@@ -34,7 +38,8 @@
 <body>
     <!-- start banner -->
     <div class="banner">
-        <img src="./imges/banner.jpg" alt="">
+        <div class="banner-image"></div>
+        <!-- <img src="./imges/banner.jpg" alt=""> -->
     </div>
     <!-- end banner -->
     <!-- start navbar -->
@@ -55,13 +60,31 @@
     </nav>
     <div class="navbar-slice"></div>
     <!-- end navbar -->
+
+    <!-- start circular-navbar -->
+    <div id="circularMenu" class="circular-menu">
+
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+          <i class="fa fa-plus"></i>
+        </a>
+      
+        <menu class="items-wrapper">
+          <a href="#skills" class="menu-item fa fa-facebook"></a>
+          <a href="#projects" class="menu-item fa fa-twitter"></a>
+          <a href="#contact" class="menu-item fa fa-google-plus"></a>
+          <a href="./files/resume.pdf" class="menu-item fa fa-linkedin"></a>
+        </menu>
+      
+      </div>      
+    <!-- end circular-navbar -->
+
     <!-- start about -->
     <div class="about" id="about">
         <div class="container">
             <div class="title">ABOUT ME</div>
             <div class="about-content">
                 <div class="about-illustration">
-                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay ></lottie-player>
+                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"   loop  autoplay class="lottie"></lottie-player>
                 </div>
                 <div class="about-text">
                     Hello, I am Suman Saurav. I am an ECE undergrad currently studying at Thapar Institute of Technology. I have holastic knowledge of Web Technology and I have a serious passion for creating intuitive and dynamic user experiences. 
@@ -135,15 +158,25 @@
     <div class="contact" id="contact">
         <div class="container">
             <div class="title">CONTACT ME</div>
-            <form class="contact-form" id="form">
-                <input type="text" name="" id="name" placeholder="Name">
-                <input type="text" name="" id="email" placeholder="E-mail">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <form class="contact-form" id="form" data-netlify="true">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="email" id="email" placeholder="E-mail">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
                 <button class="contact-button">SEND</button>
             </form>
         </div>
     </div>
     <!-- end contact -->
+
+    <!-- start tab-menu -->
+    <div class="tabMenu">
+        <div class="about"></div>
+        <div class="skills"></div>
+        <div class="projects"></div>
+        <div class="contact"></div>
+        <div class="resume"></div>
+    </div>
+    <!-- end tab-menu -->
 
 </body>
 </html>
