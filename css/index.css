@@ -351,43 +351,45 @@ ul{
 }
 
 #projects-list-ecommerce{
-    background-size: contain !important;
+    width: 100%;
+    background-size: 100% !important;
     background-repeat: no-repeat !important;
     background: url("../imges/ecommerceStat.png");
 }
 
 #projects-list-ecommerce:hover{
-    background-size: contain !important;
+    background-size: 100% !important;
     background-repeat: no-repeat !important;
     background: url("../imges/ecommerce.gif");
 }
 
 #projects-list-circuit{
-    background-size: contain !important;
+    width: 100%;
+    background-size: 100% !important;
     background-repeat: no-repeat !important;
     background: url("../imges/circuitsStat.png");
 }
 
 #projects-list-circuit:hover{
-    background-size: contain !important;
+    background-size: 100% !important;
     background-repeat: no-repeat !important;
     background: url("../imges/circuits.gif");
 }
 
 #projects-list-ml{
-    background-size: contain !important;
+    width: 100%;
+    background-size: 100% !important;
     background-repeat: no-repeat !important;
     background: url("../imges/machineStat.png");
 }
 
 #projects-list-ml:hover{
-    background-size: contain !important;
+    background-size: 100% !important;
     background-repeat: no-repeat !important;
     background: url("../imges/machine.gif");
 }
 
 .projects-project{
-    background: red;
     min-width: 200px;
     min-height: 250px;
     margin: auto;
