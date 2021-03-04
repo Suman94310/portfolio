@@ -79,6 +79,10 @@ ul{
     justify-content: space-between;
 }
 
+.resume{
+    font-weight: 900;
+}
+
 .navbar > div>div{
     display: flex;
     height: 40px;
@@ -344,6 +348,42 @@ ul{
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 60px;
+}
+
+#projects-list-ecommerce{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background: url("../imges/ecommerceStat.png");
+}
+
+#projects-list-ecommerce:hover{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background: url("../imges/ecommerce.gif");
+}
+
+#projects-list-circuit{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background: url("../imges/circuitsStat.png");
+}
+
+#projects-list-circuit:hover{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background: url("../imges/circuits.gif");
+}
+
+#projects-list-ml{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background: url("../imges/machineStat.png");
+}
+
+#projects-list-ml:hover{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background: url("../imges/machine.gif");
 }
 
 .projects-project{
