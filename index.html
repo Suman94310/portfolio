@@ -20,7 +20,7 @@
     <!-- <script src="./scripts/smtp.js"></script> -->
 
     <!-- importing font-awesome start-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <!-- end importing font-awesome -->
 
     <!-- importing lottie start -->
@@ -34,6 +34,31 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
     <!-- end importing fonts -->
 
+    <!-- start importing firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBoy5lsf1CLxEmQCdR-hXdOSV89fa1EkmM",
+            authDomain: "breadboard-739d4.firebaseapp.com",
+            projectId: "breadboard-739d4",
+            storageBucket: "breadboard-739d4.appspot.com",
+            messagingSenderId: "188567872354",
+            appId: "1:188567872354:web:6571bc271c3b71bf41c23b",
+            measurementId: "G-VD1BPW30ZM"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- end importing firebase -->
 
 </head>
 <body>
@@ -52,11 +77,11 @@
                 <div class="navbar-link"><a href="#projects">PROJECTS</a></div>
                 <div class="navbar-link"><a href="#contact">CONTACT ME</a></div>
             </div>
-            <div class="resume">
-                <a href="./files/resume.pdf">
+            <a href="./files/resume.pdf" class="resume">
+                <div >
                     <b>RESUME</b>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </nav>
     <div class="navbar-slice"></div>
@@ -138,36 +163,56 @@
             <div class="title">PROJECTS</div>
             <div class="projects-list">
                 <div class="projects-project">
-                    <a href="https://serene-northcutt-d697c5.netlify.app/" id="projects-list-ecommerce" >
-                        <!-- <div class="projects-gif"></div> -->
-                    </a>
-                    <!-- <a href="">
-                        <img src="./imges/github.svg" class="projects-github" alt="">
-                    </a>     -->
+                    <div class="projects-image" id="projects-list-ecommerce"></div>
+                    <div class="projects-details">
+                        <div class="projects-summary">
+                            <h2>Woodsmith</h2>
+                            <p>An e-commerce webiste to which sells furnitures</p>
+                        </div>
+                        <div class="projects-links">
+                            <a href="https://github.com/Suman94310/ecommerce">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://serene-northcutt-d697c5.netlify.app/">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-
                 <div class="projects-project">
-                    <a href="https://app.netlify.com/sites/epic-euclid-e5aa5a/overview"  id="projects-list-circuit">
-                        <!-- <div class="projects-gif"></div> -->
-                    </a>
-                    <!-- <a href="">
-                        <img src="./imges/github.svg" class="projects-github" alt="">
-                    </a>     -->
+                    <div class="projects-image" id="projects-list-circuit"></div>
+                    <div class="projects-details">
+                        <div class="projects-summary">
+                            <h2>BreadBoard</h2>
+                            <p>Node based lightweight circuit maker</p>
+                        </div>
+                        <div class="projects-links">
+                            <a href="https://github.com/Suman94310/breadboard">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://epic-euclid-e5aa5a.netlify.app/">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-
                 <div class="projects-project">
-                    <a href="#" id="projects-list-ml">
-                        <!-- <div class="projects-gif"></div> -->
-                    </a>
-                    <!-- <a href="">
-                        <img src="./imges/github.svg" class="projects-github" alt="">
-                    </a>     -->
-                </div>
-                
-
-
+                    <div class="projects-image" id="projects-list-ml"></div>
+                    <div class="projects-details">
+                        <div class="projects-summary">
+                            <h2>Turing Test</h2>
+                            <p>Collection of interactive machine learning projects</p>
+                        </div>
+                        <div class="projects-links">
+                            <a href="https://github.com/Suman94310/turingTest">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://dreamy-pare-d28444.netlify.app/">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
             </div>
         </div>
     </div>

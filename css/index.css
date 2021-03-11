@@ -77,10 +77,21 @@ ul{
 .navbar > div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 900;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef56, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 2.2em !important;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 300px;
 }
 
 .navbar > div>div{
@@ -390,19 +401,38 @@ ul{
 }
 
 .projects-project{
-    min-width: 200px;
-    min-height: 250px;
     margin: auto;
-    padding: 20px;
+    margin-bottom: 1.5em;
     display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 5px #c7c7c769;
 }
 
-.projects-gif{
-    width: 100%;
-    height: 100%;
+.projects-image{
+    width: 200px !important;
+    height: 220px !important;
 }
-.projects-github{
+
+.projects-details{
+    background-color: white;
+    width: 200px;
+    height: 220px;
+    box-sizing: border-box;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
 }
+
+.projects-details p {
+    font-size: 0.8em;
+    color: grey;
+}
+
+.projects i{
+    color: black;
+}
+
 /* end projects */
 
 /* start contact */
@@ -447,6 +477,7 @@ ul{
     background: #1E242C;
     color: #f4f4f4;
     font-size: 15px;
+    border-radius: 3px;
 }
 
 .contact-form>textarea{
@@ -456,7 +487,7 @@ ul{
     color: #f4f4f4;
     font-size: 15px;
     padding-left: 20px;
-
+    border-radius: 3px;
 }
 
 .contact-button{
@@ -466,6 +497,7 @@ ul{
     border-radius: 0;
     border: none;
     background: #505a73;
+    border-radius: 3px;
 }
 
 .contact-button:active{
