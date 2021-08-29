@@ -168,9 +168,8 @@ class Project extends HTMLElement {
         this.shadowRoot.getElementById("skills").innerHTML = newValue
     }
     else if(name === "github"){
-        if(!newValue === "not allowed"){
+        if(!newValue === "none"){
           this.shadowRoot.getElementById("github").href = newValue
-          this.shadowRoot.getElementById("github").alt = "Sorry company's policy can't show you the code"
         }
         else{
           this.shadowRoot.getElementById("github").classList.add("blocked")
