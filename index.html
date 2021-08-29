@@ -1,252 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suman Saurav</title>
-    <!-- titlebar icon start-->
-    <link rel="icon" href="./imges/icon.svg" type="image/icon type">
-    <!-- title icon end -->
-    
-    <!-- importing index css start -->
-    <link rel="stylesheet" href="./css/index.css">
-    <!-- end importing index css -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- importing fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- importing index js start -->
-    <script src="./scripts/index.js"></script>
-    <!-- end importing index js -->
+        <!-- importing stylesheet -->
+        <link rel="stylesheet" href="./css/index.css">
+        <!-- importting scripts -->
+        <!-- <script src="./scripts/index.js"></script> -->
 
-    <!-- importing smtp js start -->
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
-    <!-- </script> -->
-    <!-- end importing smtp js -->
-    <!-- <script src="./scripts/smtp.js"></script> -->
+        <!-- importing lottie player -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        
+        <!-- importing favicon -->
+        <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
 
-    <!-- importing font-awesome start-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <!-- end importing font-awesome -->
-
-    <!-- importing lottie start -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- end importing lottie -->
-
-
-    <!-- start importing fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
-    <!-- end importing fonts -->
-
-    <!-- start importing firebase -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-            apiKey: "AIzaSyBoy5lsf1CLxEmQCdR-hXdOSV89fa1EkmM",
-            authDomain: "breadboard-739d4.firebaseapp.com",
-            projectId: "breadboard-739d4",
-            storageBucket: "breadboard-739d4.appspot.com",
-            messagingSenderId: "188567872354",
-            appId: "1:188567872354:web:6571bc271c3b71bf41c23b",
-            measurementId: "G-VD1BPW30ZM"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-    <!-- end importing firebase -->
-
-</head>
-<body>
-    <!-- start banner -->
-    <div class="banner">
-        <div class="banner-image"></div>
-        <!-- <img src="./imges/banner.jpg" alt=""> -->
-    </div>
-    <!-- end banner -->
-    <!-- start navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
+        <!-- importing project component -->
+        <script src="./scripts/project.js"></script>
+        <title>Suman Saurav</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar container">
             <div>
-                <div class="navbar-link"><a href="#about">ABOUT</a></div>
-                <div class="navbar-link"><a href="#skills">SKILLS</a></div>
-                <div class="navbar-link"><a href="#projects">PROJECTS</a></div>
-                <div class="navbar-link"><a href="#contact">CONTACT ME</a></div>
+                <a href="" class="icon">
+                    <img src="./images/logo.svg" alt="">
+                </a>
             </div>
-            <a href="./files/resume.pdf" class="resume">
-                <div >
-                    <b>RESUME</b>
-                </div>
-            </a>
-        </div>
-    </nav>
-    <div class="navbar-slice"></div>
-    <!-- end navbar -->
-
-    <!-- start circular-navbar -->
-    <div id="circularMenu" class="circular-menu">
-
-        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
-          <i class="fa fa-plus"></i>
-        </a>
-      
-        <menu class="items-wrapper">
-          <a href="#skills" class="menu-item fa fa-facebook"></a>
-          <a href="#projects" class="menu-item fa fa-twitter"></a>
-          <a href="#contact" class="menu-item fa fa-google-plus"></a>
-          <a href="./files/resume.pdf" class="menu-item fa fa-linkedin"></a>
-        </menu>
-      
-      </div>      
-    <!-- end circular-navbar -->
-
-    <!-- start about -->
-    <div class="about" id="about">
-        <div class="container">
-            <div class="title">ABOUT ME</div>
-            <div class="about-content">
-                <div class="about-illustration">
-                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"   loop  autoplay class="lottie"></lottie-player>
-                </div>
-                <div class="about-text">
-                    Hello, My name is  Suman Saurav. I am an ECE undergrad currently studying at Thapar Institute of Technology. I have holastic knowledge of Web Technology and I have a serious passion for creating intuitive and dynamic user experiences. 
-                </div>
+            <div>
+                <a href="#about" class="navbar-link">About</a>
+                <a href="#skills" class="navbar-link">Skills</a>
+                <a href="#projects" class="navbar-link">Projects</a>
+                <a href="#contacts" class="navbar-link">Contacts</a>
+                <a href="#" class="navbar-link button">Resume</a>
             </div>
+        </nav>
+        <!-- leftbar -->
+        <div class="leftBar">
+            <a href="https://github.com/Suman94310"><img src="./images/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/ssaurav25/"><img src="./images/linkedIn.svg" alt="linkedIn"></a>
         </div>
-    </div>
-    <!-- end about -->
-    <!-- start skills -->
-    <div class="skills-topSlice"></div>
-    <div class="skills" id="skills">
-        <div class="container">
-            <div class="title">MY SKILLS</div>
-            <div class="skills-lists">
-                <div class="skills-frontend">
-                    <img src="./imges/television.svg" alt="">
-                    <div class="skills-name">FRONTEND</div>
-                    <div>HTML</div>
-                    <div>CSS</div>
-                    <div>REACT</div>
-                    <div>FIGMA</div>
-                </div>
-                <div class="skills-backend">
-                    <img src="./imges/server.svg" alt="">
-                    <div class="skills-name">BACKEND</div>
-                    <div>DJANGO</div>
-                    <div>EXPRESS JS</div>
-                    <div>NODE JS</div>
-                    <div>PHP</div>
-                    <div>FIREBASE</div>
-                </div>
-                <div class="skills-frontend">
-                    <img src="./imges/code.svg" alt="">
-                    <div class="skills-name">LANGUAGES</div>
-                    <div>JAVASCRIPT</div>
-                    <div>PYTHON</div>
-                    <div>JAVA</div>
-                    <div>C/C++</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="skills-bottomSlice"></div>
-    <!-- end skills -->
 
-    <!-- start projects -->
-
-    <div class="projects" id="projects">
-        <div class="container">
-            <div class="title">PROJECTS</div>
-            <div class="projects-list">
-                <div class="projects-project">
-                    <div class="projects-image" id="projects-list-ecommerce"></div>
-                    <div class="projects-details">
-                        <div class="projects-summary">
-                            <h2>Woodsmith</h2>
-                            <p>An e-commerce webiste to which sells furnitures</p>
+        <!-- main content -->
+        <div class="innerContainer">
+            <!-- about -->
+            <section id="about">
+                <div>
+                    <div>
+                        <div class="big normal">
+                            Hello There, My name is <br><span class="primary large">Suman Saurav</span><br> I’m a Full Stack Web Developer
                         </div>
-                        <div class="projects-links">
-                            <a href="https://github.com/Suman94310/ecommerce">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://serene-northcutt-d697c5.netlify.app/">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
+                        <a class="button">Say Hello</a>
+                    </div>
+                    <div class="animation">
+                        <lottie-player src="images/lf20_fk0uwydo.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop autoplay></lottie-player>
                     </div>
                 </div>
-                <div class="projects-project">
-                    <div class="projects-image" id="projects-list-circuit"></div>
-                    <div class="projects-details">
-                        <div class="projects-summary">
-                            <h2>BreadBoard</h2>
-                            <p>Node based lightweight circuit maker</p>
-                        </div>
-                        <div class="projects-links">
-                            <a href="https://github.com/Suman94310/breadboard">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://epic-euclid-e5aa5a.netlify.app/">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div class="about-arrow">
+                    <img src="./images/downArrow.svg" alt="down arrow">
                 </div>
-                <div class="projects-project">
-                    <div class="projects-image" id="projects-list-ml"></div>
-                    <div class="projects-details">
-                        <div class="projects-summary">
-                            <h2>Turing Test</h2>
-                            <p>Collection of interactive machine learning projects</p>
+            </section>
+
+            <!-- skills -->
+            <section id="skills">
+                <div class="skills-header">
+                    <div class="bigger primary">Things I Know</div>
+                    <div></div>
+                </div>
+                <ul class="normal">
+                    <li>
+                        <div>01. Frontend</div>
+                        <div class="skillsIcons">
+                            <img src="./images/react.svg" alt="">
+                            <img src="./images/html.svg" alt="">
+                            <img src="./images/css.svg" alt="">
+                            <img src="./images/figma.svg" alt="">
                         </div>
-                        <div class="projects-links">
-                            <a href="https://github.com/Suman94310/turingTest">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://dreamy-pare-d28444.netlify.app/">
-                                <i class="fas fa-globe"></i>
-                            </a>
+                    </li>
+                    <li>
+                        <div>02. Backend</div>
+                        <div class="skillsIcons">
+                            <img src="./images/node.svg" alt="">
+                            <img src="./images/mongo.svg" alt="">
+                            <img src="./images/sql.svg" alt="">
                         </div>
-                    </div>
-                </div>                
-            </div>
+                    </li>
+                    <li>
+                        <div>03. Languages</div>
+                        <div class="skillsIcons">
+                            <img src="./images/javascript.svg" alt="">
+                            <img src="./images/python.svg" alt="">
+                            <img src="./images/java.svg" alt="">
+                            <img src="./images/c++.svg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects">
+                <div class="bigger primary">
+                    Projects
+                </div>
+                <my-project title="Insuremyteam" class="project" details="A Employee/Employer/Admin Dashboard for Insuremyteam to handle their insuarance policies." skills="<div> React Js </div> <div> Material Ui </div>" image="../images/projects/insure.jpg" left external="https://app.insuremyteam.com/" github="not allowed"></my-project>
+                <my-project title="Woodsmith" class="project" details="An ecommerce website with all the essential functionalities such as user authentication, item searching etc." skills="<div> React Js </div> <div> Django </div> <div> Material Ui </div>" image="../images/projects/woodsmith.jpg" github="https://github.com/Suman94310/ecommerce" external="https://github.com/Suman94310/ecommerce"></my-project>
+                <my-project title="Breadboard" class="project" details="A light weight and fast online digital circuit simulator created on HTML canvas" skills="<div> HTML/CSS </div> <div> Javascript </div>" image="../images/projects/breadboard.jpg" left github="https://github.com/Suman94310/breadboard" external="https://digitalbreadboard.netlify.app/"></my-project>
+                <my-project title="Turing Test" class="project" details="An website which holds all of my interactive machine learning projects" skills="<div> React Js </div> <div> Django </div>" image="../images/projects/turing.jpg" github="https://github.com/Suman94310/turingTest" external="https://turingtest.netlify.app/"></my-project>
+            </section>
+
+            <!-- Contacts -->
+            <section id="contacts">
+                <div class="primary">Say Hello</div>
+                <form method="POST" name="contact" data-netlify=true>
+                    <input type="text" name="name" id="" placeholder="Name">
+                    <input type="text" name="email" id="" placeholder="Email">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" style="resize:none"></textarea>
+                    <button class="button">Submit</button>
+                </form>
+            </section>
         </div>
-    </div>
-
-    <!-- end projects -->
-
-    <!-- start contact -->
-    <div class="contact-topSlice"></div>
-    <div class="contact" id="contact">
-        <div class="container">
-            <div class="title">CONTACT ME</div>
-            <form class="contact-form" id="form" data-netlify="true">
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="text" name="email" id="email" placeholder="E-mail">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <div data-netlify-recaptcha="true"></div>
-                <button class="contact-button">SEND</button>
-            </form>
-        </div>
-    </div>
-    <!-- end contact -->
-
-    <!-- start tab-menu -->
-    <!-- <div class="tabMenu">
-        <div class="about"></div>
-        <div class="skills"></div>
-        <div class="projects"></div>
-        <div class="contact"></div>
-        <div class="resume"></div>
-    </div> -->
-    <!-- end tab-menu -->
-
-</body>
+    </body>
 </html>

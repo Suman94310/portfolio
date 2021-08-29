@@ -1,0 +1,222 @@
+
+    $background: #0D131A;
+    $backgroundLight: #151F2A;
+    $primary: #5A9F8B;
+    $secondary: #80A4ED;
+    $normal: #B0BAD6;
+
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: $background;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* reusables */
+.button{
+    border: solid 2px $primary !important;
+    color: $primary !important;
+    padding: 0.5em 1em;
+    border-radius: 7px !important;
+}
+
+.primary{
+    color: $primary;
+}
+.normal{
+    color: $normal;
+}
+
+.large{
+    font-size: 40px !important;
+    font-weight: 500;
+}
+
+.bigger{
+    font-size: 27px !important;
+    font-weight: 700;
+}
+
+.big{
+    font-size: 20px !important;
+}
+
+.border{
+    border: solid 1px $primary;
+}
+/* end reusables */
+
+
+/* container */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.innerContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    >div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        >.navbar-link{
+            color: $normal;
+            &:hover{
+                color: $secondary;
+            }
+        }
+    }
+}
+
+// leftbar
+.leftBar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    >*{
+        padding: 0 0 1em 1em ;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+// about
+#about{
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >:first-child{
+        display: flex;
+        align-items: center;
+        >*{
+            flex: 1;
+        }
+        >:first-child{
+            >div{
+                padding-bottom: 4em;
+            }
+            >a{
+                padding: 1em 3em;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @keyframes jump {
+        0% { transform: translate(50%, 50%) }
+        50% { transform: translate(50%, 150%) }
+        100% { transform: translate(50%, 50%) }
+    }
+    .about-arrow{
+        margin-top: 2em;
+        animation: jump 2s infinite;
+    }
+}
+.animation{
+    padding-left: 30%;
+}
+
+// Skills
+#skills{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-top: 4em;
+    .skills-header{
+        display: flex;
+        align-items: center;
+        >:last-child{
+            width: 40%;
+            height: 2px;
+            background-color: $primary;
+            margin-left: 1em;
+        }
+    }
+    >ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 2em;
+        li{
+            display: flex;
+            align-items: center;
+            >:first-child{
+                width: 10em;
+            }
+            img{
+                height: 40px;
+                width: 40px;
+                padding: 1em;
+            }
+        }
+    }
+}
+
+// projects
+#projects{
+    // margin-top: 4em;
+
+    >:first-child{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    >.project{
+        margin-bottom: 8rem;
+    }
+}
+
+// contacts
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >:first-child{
+        font-size: 40px !important;
+    }
+    >:last-child{
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        >*{
+            background-color: $backgroundLight;
+            padding: 1em;
+            border: none;
+            border-radius: 5px;
+            color: $normal;
+            margin-bottom: 1em;
+            outline: none;
+        }
+        >.button{
+            max-width: 8em;
+        }
+    }
+}
