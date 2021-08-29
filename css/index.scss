@@ -71,22 +71,31 @@ a{
 
 /* navbar */
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0 1em 0;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s;
+    background: $background;
+    z-index: 10;
     >div{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 1em;
-        >.navbar-link{
-            color: $normal;
-            &:hover{
-                color: $secondary;
+        padding: 1em 0 1em 0;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+            >.navbar-link{
+                color: $normal;
+                &:hover{
+                    color: $secondary;
+                }
             }
         }
     }
+    
 }
 
 // leftbar
@@ -108,6 +117,7 @@ a{
 // about
 #about{
     // min-height: 100vh;
+    margin-top: 77px;
     display: flex;
     flex-direction: column;
     align-items: center;

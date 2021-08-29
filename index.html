@@ -23,23 +23,29 @@
 
         <!-- importing project component -->
         <script src="./scripts/project.js"></script>
+
+        <!-- inporting navbar script -->
+        <script src="./scripts/navbar.js"></script>
         <title>Suman Saurav</title>
     </head>
     <body>
         <!-- navbar -->
-        <nav class="navbar container">
-            <div>
-                <a href="" class="icon">
-                    <img src="./images/logo.svg" alt="">
-                </a>
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div>
+                    <a href="" class="icon">
+                        <img src="./images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#about" class="navbar-link">About</a>
+                    <a href="#skills" class="navbar-link">Skills</a>
+                    <a href="#projects" class="navbar-link">Projects</a>
+                    <a href="#contacts" class="navbar-link">Contacts</a>
+                    <a href="#" class="navbar-link button">Resume</a>
+                </div>
             </div>
-            <div>
-                <a href="#about" class="navbar-link">About</a>
-                <a href="#skills" class="navbar-link">Skills</a>
-                <a href="#projects" class="navbar-link">Projects</a>
-                <a href="#contacts" class="navbar-link">Contacts</a>
-                <a href="#" class="navbar-link button">Resume</a>
-            </div>
+            
         </nav>
         <!-- leftbar -->
         <div class="leftBar">
@@ -56,7 +62,7 @@
                         <div class="big normal">
                             Hello There, My name is <br><span class="primary large">Suman Saurav</span><br> I’m a Full Stack Web Developer
                         </div>
-                        <a class="button">Say Hello</a>
+                        <a class="button" href="#contacts">Say Hello</a>
                     </div>
                     <div class="animation">
                         <lottie-player src="images/lf20_fk0uwydo.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop autoplay></lottie-player>
@@ -109,7 +115,7 @@
                     Projects
                 </div>
                 <my-project title="Insuremyteam" class="project" details="A Employee/Employer/Admin Dashboard for Insuremyteam to handle their insuarance policies." skills="<div> React Js </div> <div> Material Ui </div>" image="../images/projects/insure.jpg" left external="https://app.insuremyteam.com/" github="none"></my-project>
-                <my-project title="Woodsmith" class="project" details="An ecommerce website with all the essential functionalities such as user authentication, item searching etc." skills="<div> React Js </div> <div> Django </div> <div> Material Ui </div>" image="../images/projects/woodsmith.jpg" github="https://github.com/Suman94310/ecommerce" external="https://github.com/Suman94310/ecommerce"></my-project>
+                <my-project title="Woodsmith" class="project" details="An ecommerce website with all the essential functionalities such as user authentication, item searching etc." skills="<div> React Js </div> <div> Django </div> <div> Material Ui </div>" image="../images/projects/woodsmith.jpg" github="https://github.com/Suman94310/ecommerce" external="https://woodsmith.netlify.app/"></my-project>
                 <my-project title="Breadboard" class="project" details="A light weight and fast online digital circuit simulator created on HTML canvas" skills="<div> HTML/CSS </div> <div> Javascript </div>" image="../images/projects/breadboard.jpg" left github="https://github.com/Suman94310/breadboard" external="https://digitalbreadboard.netlify.app/"></my-project>
                 <my-project title="Turing Test" class="project" details="An website which holds all of my interactive machine learning projects" skills="<div> React Js </div> <div> Django </div>" image="../images/projects/turing.jpg" github="https://github.com/Suman94310/turingTest" external="https://turingtest.netlify.app/"></my-project>
             </section>

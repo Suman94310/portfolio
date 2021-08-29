@@ -69,16 +69,16 @@ a {
 
 /* navbar */
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1em 0 1em 0;
+  position: fixed;
+  /* Make it stick/fixed */
+  top: 0;
+  /* Stay on top */
+  width: 100%;
+  /* Full width */
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  background: #0D131A;
+  z-index: 10;
 }
 
 .navbar > div {
@@ -91,14 +91,27 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1em 0 1em 0;
+}
+
+.navbar > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1em;
 }
 
-.navbar > div > .navbar-link {
+.navbar > div > div > .navbar-link {
   color: #B0BAD6;
 }
 
-.navbar > div > .navbar-link:hover {
+.navbar > div > div > .navbar-link:hover {
   color: #80A4ED;
 }
 
@@ -126,6 +139,7 @@ a {
 }
 
 #about {
+  margin-top: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

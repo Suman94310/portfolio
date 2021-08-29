@@ -88,7 +88,7 @@ template.innerHTML = `
     #links a:hover{
       cursor: pointer;
     }
-    #links a.blocked{
+    #links a.blocked:hover{
       cursor: not-allowed;
     }
 
@@ -168,11 +168,12 @@ class Project extends HTMLElement {
         this.shadowRoot.getElementById("skills").innerHTML = newValue
     }
     else if(name === "github"){
-        if(!newValue === "none"){
-          this.shadowRoot.getElementById("github").href = newValue
+      console.log(newValue,newValue === "none", "flag")
+        if(newValue === "none"){
+          this.shadowRoot.getElementById("github").classList.add("blocked")
         }
         else{
-          this.shadowRoot.getElementById("github").classList.add("blocked")
+          this.shadowRoot.getElementById("github").href = newValue
         }
     }
     else if(name === "external"){
