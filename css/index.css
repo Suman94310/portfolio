@@ -81,6 +81,12 @@ a {
   z-index: 10;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .navbar > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +119,69 @@ a {
 
 .navbar > div > div > .navbar-link:hover {
   color: #80A4ED;
+}
+
+.navbarS {
+  display: none;
+  position: fixed;
+  /* Make it stick/fixed */
+  top: 0;
+  /* Stay on top */
+  width: 100%;
+  /* Full width */
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  background: #0D131A;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .navbarS {
+    display: block;
+  }
+}
+
+.navbarS > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbarS > div > :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbarS > div > #dropdown {
+  color: #B0BAD6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  overflow: hidden;
+}
+
+.navbarS > div #burger {
+  background: none;
+  border: solid 2px #5A9F8B;
+  border-radius: 5px;
+}
+
+.navbarS > div #burger:hover {
+  cursor: pointer;
 }
 
 .leftBar {

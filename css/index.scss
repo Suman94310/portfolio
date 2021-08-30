@@ -71,6 +71,9 @@ a{
 
 /* navbar */
 .navbar{
+    @media (max-width: 768px) {
+        display: none;        
+    }
     position: fixed; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
@@ -96,6 +99,42 @@ a{
         }
     }
     
+}
+
+.navbarS{
+    display: none;
+    @media (max-width: 768px) {
+        display: block;        
+    }
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s;
+    background: $background;
+    z-index: 10;
+    >div{
+        display: flex;
+        flex-direction: column;
+        >:first-child{
+            display: flex;
+            justify-content: space-between;
+        }
+        >#dropdown{
+            color: $normal;
+            display: flex;
+            flex-direction: column;
+            transition: height 1s;
+            overflow: hidden;
+        }
+        #burger{
+            background: none;
+            border: solid 2px $primary;
+            border-radius: 5px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 // leftbar

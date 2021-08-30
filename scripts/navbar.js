@@ -1,14 +1,20 @@
 window.onload = function(){
-
-
-    var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-77px";
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } 
+    else {
+      document.getElementById("navbar").style.top = "-77px";
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
-}
+
+  let toggle = true
+  document.getElementById("navbarS").onclick = ()=>{
+    toggle = !toggle
+    console.log(toggle)
+    document.getElementById("dropdown").style.height = toggle ? "auto": "0"
+  }
 }
