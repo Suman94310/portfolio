@@ -116,6 +116,7 @@ a{
     transition: top 0.3s;
     background: $background;
     z-index: 10;
+    padding: 10px 0;
     >div{
         display: flex;
         flex-direction: column;
@@ -126,9 +127,11 @@ a{
         >#dropdown{
             color: $normal;
             display: flex;
+            gap: 4px;
             flex-direction: column;
             transition: height 1s;
             overflow: hidden;
+            height: 0;
         }
         #burger{
             background: none;
@@ -154,6 +157,11 @@ a{
         &:hover{
             cursor: pointer;
         }
+    }
+    @media (max-width: 768px) {
+        // .animation{
+            display: none;
+        // }
     }
 }
 
@@ -235,6 +243,14 @@ a{
                 width: 40px;
                 padding: 1em;
             }
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: flex-start;
+                img{
+                    height: 35px;
+                    width: 35px;
+                }
+            }
         }
     }
 }
@@ -278,6 +294,9 @@ a{
         display: flex;
         flex-direction: column;
         width: 40rem;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
         >*{
             background-color: $backgroundLight;
             padding: 1em;

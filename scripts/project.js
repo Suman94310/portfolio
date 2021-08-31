@@ -68,6 +68,15 @@ template.innerHTML = `
       }
     }
 
+    @media (max-width: 768px) {
+      #image{
+        min-height: 141px;
+        min-width: 250px;
+        max-height: 141px;
+        max-width: 250px;
+      }
+    }
+
     #image.left{
         margin-left: auto;
     }
@@ -163,6 +172,15 @@ template.innerHTML = `
         min-width: 300px;
         max-height: 170px;
         max-width: 300px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #tint{
+        min-height: 141px;
+        min-width: 250px;
+        max-height: 141px;
+        max-width: 250px;
       }
     }
 

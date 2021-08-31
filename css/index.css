@@ -139,6 +139,7 @@ a {
   transition: top 0.3s;
   background: #0D131A;
   z-index: 10;
+  padding: 10px 0;
 }
 
 @media (max-width: 768px) {
@@ -171,6 +172,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 4px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -178,6 +180,7 @@ a {
   -webkit-transition: height 1s;
   transition: height 1s;
   overflow: hidden;
+  height: 0;
 }
 
 .navbarS > div #burger {
@@ -211,6 +214,12 @@ a {
 
 .leftBar > *:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .leftBar {
+    display: none;
+  }
 }
 
 #about {
@@ -356,6 +365,22 @@ a {
   padding: 1em;
 }
 
+@media (max-width: 768px) {
+  #skills > ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #skills > ul li img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
 #projects > :first-child {
   text-align: center;
   margin-bottom: 2rem;
@@ -410,6 +435,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40rem;
+}
+
+@media (max-width: 768px) {
+  #contacts > :last-child {
+    width: 100%;
+  }
 }
 
 #contacts > :last-child > * {
