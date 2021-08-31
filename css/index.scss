@@ -67,6 +67,10 @@ a{
 .innerContainer{
     width: 70%;
     margin: 0 auto;
+
+    @media (max-width: 1125px){
+        width: 80%;
+    }
 }
 
 /* navbar */
@@ -177,6 +181,11 @@ a{
                 }
             }
         }
+        @media (max-width: 768px) {
+            .animation{
+                display: none;
+            }
+        }
     }
 
     @keyframes jump {
@@ -238,8 +247,22 @@ a{
         text-align: center;
         margin-bottom: 2rem;
     }
-    >.project{
+    .project{
         margin-bottom: 8rem;
+    }
+    
+    @media (max-width: 1125px){
+        >:last-child{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 8rem;
+        }
+        .project{
+            margin-bottom: 0rem;
+            flex: 1;
+            margin: 0 auto;
+        }
     }
 }
 

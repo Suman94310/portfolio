@@ -4,12 +4,25 @@ const template = document.createElement('template');
 template.innerHTML = `
   <style>
     :host{
-      display: block
+      display: block;
+      margin: auto;
+      // width: min-content;
     }
     #main{
         position: relative;
         width: 100%;
         display: flex;
+        margin: auto;
+    }
+
+    @media (max-width: 1125px){
+      #main{
+        flex-direction: column;
+        background: #151F2B;
+        padding: 0.5rem;
+        width: min-content;
+        height: 100%;
+      }
     }
 
     #main>:first-child{
@@ -30,6 +43,14 @@ template.innerHTML = `
       right:50%;
     }
 
+    @media (max-width: 1125px){
+      #main>:last-child{
+        position: inherit;
+        padding: 1.5em;
+        left: 0;
+      }
+    }
+
     #image{
         min-height: 340px;
         min-width: 600px;
@@ -38,8 +59,23 @@ template.innerHTML = `
         border-radius: 5px;
     }
 
+    @media (max-width: 1125px){
+      #image{
+        min-height: 170px;
+        min-width: 300px;
+        max-height: 170px;
+        max-width: 300px;
+      }
+    }
+
     #image.left{
         margin-left: auto;
+    }
+
+    @media (max-width: 1125px){
+      #image.left{
+        margin-left: 0;
+      }
     }
 
     #title{
@@ -63,6 +99,12 @@ template.innerHTML = `
     }
     #details.left{
       text-align: left;
+    }
+
+    @media (max-width: 1125px){
+      #details{
+        padding: 0;
+      }
     }
 
     #skills{
@@ -108,6 +150,20 @@ template.innerHTML = `
     #tint.left{
       left: auto;
       right: 0
+    }
+
+    @media (max-width: 1125px){
+      #tint{
+        position: absolute;
+        top: 0 !important;
+        left: 0 !important;
+        margin: 0.5rem;
+
+        min-height: 170px;
+        min-width: 300px;
+        max-height: 170px;
+        max-width: 300px;
+      }
     }
 
     #tint:hover{
